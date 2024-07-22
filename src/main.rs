@@ -2,6 +2,9 @@ use expressive_calc;
 use std::io::{self, Write};
 
 fn main() {
+    println!("Enter 'exit' to close the calculator.");
+
+    let mut calculator = expressive_calc::Calculator::new();
     loop {
         print!(">> ");
         io::stdout().flush().unwrap();
@@ -13,9 +16,9 @@ fn main() {
                 if input == "exit" {
                     break;
                 }
-                let result = expressive_calc::evaluate(input);
+                let result = calculator.evaluate(input);
                 match result {
-                    Ok(result) => println!("{}", result),
+                    Ok((name, value)) => println!("{} = {}", name, value),
                     Err(e) => println!("{}", e),
                 }
             }
