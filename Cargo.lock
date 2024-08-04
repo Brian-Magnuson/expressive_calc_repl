@@ -5,7 +5,7 @@ version = 3
 [[package]]
 name = "expressive_calc"
 version = "0.1.0"
-source = "git+https://github.com/Brian-Magnuson/expressive_calc#4032d022218ec8ae6790629809c1520dae2395e4"
+source = "git+https://github.com/Brian-Magnuson/expressive_calc#465ea454f849e385e95fc3b0a0b586b5aa61bdde"
 
 [[package]]
 name = "expressive_calc_repl"
